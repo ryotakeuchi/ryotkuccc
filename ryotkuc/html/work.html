@@ -1,0 +1,335 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ryo/work</title>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,700' rel='stylesheet' type='text/css'>
+<!--font awesome Fontawesomeというwebからフラットなアイコンなどを呼び出す設定-->  
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!--Bootstrap フレームワークが簡単になる-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--works.htmlの設定-->
+<link rel="stylesheet" href="../css/work.css">
+<!--menu  -->
+<link rel="stylesheet" href="../css/menu-settei.css">
+<!--480pxまでのデザイン　iphone7 480px　-->
+ <link href="../css/menu-max480px-settei.css" rel="stylesheet" type="text/css" media="screen and (max-width:480px;)">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+<script src="../js/work.js"></script>
+
+</head>
+
+
+<body>
+
+<!--menu-->
+<!--ハンバーガーアイコン-->
+<div class="menu-section">
+		  <div class="menu-toggle">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		  </div>
+		<!--メニュー内容-->
+		  <nav>
+			<ul role="navigation" class="hidden">
+				<li><a href="index.html">home</a></li>
+				<li><a href="work.html">work</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="aday">a day</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		  </nav>
+		</div>
+
+
+<!--/////////////////////////////////////-->
+
+<section class="portfolio_mainblock">
+	<!-- コンテナの設定　Bootstrap　どの媒体でも　自動で真ん中に配置される　-->
+	<div class="container">
+		<div class="row">
+        	<div class="col-md-12 col-sm-12 col-xs-12">
+            	<div class="about_innerblock">
+                	<h2 class="section_header">Work</h2>
+                    <p class="section_para"></p>
+                </div>
+            </div>
+        </div>
+	</div>
+        
+    <div class="filter_main_block">
+        <main class="cd-main-content">
+		<div class="cd-tab-filter-wrapper">
+			<div class="cd-tab-filter">
+				<ul class="cd-filters">
+					<li class="placeholder"> 
+						<a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+					</li> 
+					<li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+					<li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Graphic</a></li><!--graphic designはcolor1タグにいれる-->
+					<li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Illustration</a></li>
+					<li class="filter" data-filter=".color-3"><a href="#0" data-type="color-3">Web</a></li>
+					<li class="filter" data-filter=".color-4"><a href="#0" data-type="color-4">App</a></li>
+					<li class="filter" data-filter=".color-5"><a href="#0" data-type="color-5">Movie</a></li>
+				</ul> <!-- cd-filters -->
+			</div> <!-- cd-tab-filter -->
+		</div> <!-- cd-tab-filter-wrapper -->
+
+		<section class="cd-gallery">
+			<ul class="grid cs-style-3">
+				<!-- graphic design 作品 -->
+				<li class="mix color-1 check1 radio2 option3">
+                	<figure>
+                        <img src="../img/Space.jpg">
+                        <figcaption>
+                            <h3>Space</h3>
+                            <span>2016.</span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+         <!-- illustration 作品-->
+				<li class="mix color-2 check2 radio2 option2">
+                	<figure>
+                        <img src="../img/compose.jpg">
+                        <figcaption>
+                            <h3>Compose.</h3>
+                            <span>2016.12.</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+          <!-- graphic design 作品2 -->
+				<li class="mix color-1 check3 radio3 option1">
+                	<figure>
+                        <img src="../img/selfy.jpg">
+                        <figcaption>
+                            <h3>Selfy</h3>
+                            <span>2016.</span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>      
+          <!-- web 作品-->
+				<li class="mix color-3 check3 radio3 option3">
+                	<figure>
+                        <img src="../img/murenadeshiko.jpg">
+                        <figcaption>
+                            <h3>murenadeshiko.</h3>
+                            <span>2018.1.</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+         
+          <!-- movie 作品 -->
+				<li class="mix color-5 check3 radio3 option1">
+                	<figure>
+                        <img src="../img/mafyintro.jpg">
+                        <figcaption>
+                            <h3>MAFY</h3>
+                            <span>2015.</span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>      
+          <!-- graphic design 作品2 -->
+				<li class="mix color-1 check3 radio3 option1">
+                	<figure>
+                        <img src="../img/Me.jpg">
+                        <figcaption>
+                            <h3>Me</h3>
+                            <span>2016.12</span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+            <!-- App 作品 -->
+				<li class="mix color-4 check3 radio3 option1">
+                	<figure>
+                        <img src="../img/unsplash.jpg">
+                        <figcaption>
+                            <h3>Unsplash</h3>
+                            <span></span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>       
+                    
+          <!-- web 作品2-->
+				<li class="mix color-5 check3 radio3 option3">
+                	<figure>
+                        <img src="../img/itigo-intro.jpg">
+                        <figcaption>
+                            <h3>itigo/intro</h3>
+                            <span>xxx</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+            <!-- web 作品3-->
+				<li class="mix color-3 check3 radio3 option3">
+                	<figure>
+                        <img src="../img/sotuseiweb.jpg">
+                        <figcaption>
+                            <h3>サマザマナフク/Web</h3>
+                            <span>2018.1.</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li> 
+            <!-- illustration 作品2-->
+				<li class="mix color-2 check2 radio3 option3">
+                	<figure>
+                        <img src="../img/ayaka.jpg">
+                        <figcaption>
+                            <h3>A-project</h3>
+                            <span>-ayaka.</span>                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>        
+           <!-- graphic design 作品3 -->
+				<li class="mix color-1 check3 radio2 option4">
+                	<figure>
+                        <img src="../img/tunnel.jpg">
+                        <figcaption>
+                            <h3>Tunnel</h3>
+                            <span>2017.1</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+               
+              <!-- graphic design 作品3 -->
+				<li class="mix color-2 check3 radio2 option4">
+                	<figure>
+                        <img src="../img/paintart.jpg">
+                        <figcaption>
+                            <h3>FavoritePeople</h3>
+                            <span>2016.8</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>  
+             
+            <!-- graphic design 作品4 -->
+				<li class="mix color-1 check1 radio3 option2">
+                	<figure>
+                        <img src="../img/likeflower.jpg">
+                        <figcaption>
+                            <h3>Like Flower</h3>
+                            <span>2016.12</span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+          
+           <!-- web 作品3-->
+				<li class="mix color-3 check3 radio3 option3">
+                	<figure>
+                        <img src="../img/yaezakura.jpg">
+                        <figcaption>
+                            <h3>yaezakura.</h3>
+                            <span>2018.1.</span>                        
+                            </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>
+          <!-- illustration 作品3-->
+				<li class="mix color-2 check2 radio2 option1">
+                	<figure>
+                        <img src="../img/sotusei.jpg">
+                        <figcaption>
+                            <h3>サマザマナフク</h3>
+                            <span></span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>   
+           <!-- App 作品-->
+				<li class="mix color-4 check2 radio2 option1">
+                	<figure>
+                        <img src="../img/tastemade.jpg">
+                        <figcaption>
+                            <h3>Tastemade.</h3>
+                            <span></span>                        
+                        </figcaption>
+                    	<div class="blur_bg">
+                        	<a href="#" class="view_link"><i class="fa fa-eye"></i></a>
+                            <a href="#" class="goto_link"><i class="fa fa-link"></i></a>
+                        </div>
+                    </figure>
+                </li>    
+                
+				
+				
+				
+				<li class="gap"></li>
+				<li class="gap"></li>
+				<li class="gap"></li>
+			</ul>
+			<div class="cd-fail-message">No results found</div>
+		</section> <!-- cd-gallery -->
+
+	
+	</main> <!-- cd-main-content -->
+
+        
+        
+    </div>	
+</section>
+
+<!--menuのjs　動きの設定-->
+<script src="../js/menu.js"></script>
+</body>
+
+</html>

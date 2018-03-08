@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#profile1{background-color:none;}
+
+
+
+/*スマホ用　設定*/
+@media screen and (max-width:480px){
+	body{width:100vw;  height:1000px; }
+	#name { margin:0 auto; position:absolute; top:30vh; left:36vw;  background-color:none;}
+	#name h1{font-size:100%; font-weight:800; margin:auto;}
+	
+	#profile1{width:80%; position:absolute;  top:40vh; left:12vw; margin:auto; background-color:none;}
+	#profile1 p{margin:auto; margin-top:5%;color:#242424;line-height:20px;font-size:60%;letter-spacing:3px; text-align:left; }
+}
+
+
+/*481px以降　設定*/
+@media screen and (min-width:481px){
+	body{width:100%;}
+	#name { width:80%; position:absolute; top:30vh; left:10vw;  background-color:none;}
+	#name h1{font-size:100%; font-weight:800; margin:auto;}
+	
+	#profile1{width:80%; position:absolute;  top:40vh; left:10vw; margin:auto; background-color:none;}
+	#profile1 p{margin:auto; margin-top:4%;color:#242424;line-height:20px;font-size:80%;letter-spacing:5px; text-align:left; }
+}

@@ -1,0 +1,193 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+/*top page logo タイトル文字　色　大きさ　アニメーション　設定*/
+.btn a {color:#fff;}
+.btn a:hover{text-decoration:none;}
+
+/* ~~~~~~~ INIT. BTN 周りの枠組みs 設定~~~~~~~ */
+.btn {
+	top:45vh;left:35vw; 
+	position: absolute;	
+	padding: 1.4rem 4.2rem;
+	padding-right: 3.1rem;
+	font-size: 1.4rem;
+	letter-spacing: 1.1rem;
+	text-transform: uppercase;
+	transition: all 600ms cubic-bezier(0.77, 0, 0.175, 1);	
+	user-select: none;
+}
+
+.btn:before, .btn:after {
+	content: '';
+	position: absolute;	
+	transition: inherit;
+	z-index: -1;
+}
+
+.btn:hover {transition-delay:.6s;}
+
+.btn:hover:before{transition-delay:0s;}
+
+/*触れた後　起きるboxの設定*/
+.btn:hover:after {background:#444444; transition-delay:.4s;}
+
+
+.from-middle:before {
+	top: 0;
+	left: 50%;
+	height: 100%;
+	width: 0;
+	border: 1px solid var(--inv);
+	border-left: 0;
+	border-right: 0;
+}
+
+.from-middle:after {bottom:0; left:0; height:0; width:100%;}
+
+.from-middle:hover:before {left:0; width:100%;}
+
+.from-middle:hover:after {top:0; height:100%;}
+
+/* ~~~~~~~~~~~~ 今回はmiddle verだけど全体で適用する必要のある設定 ~~~~~~~~~~~~ */
+
+*, *:before, *:after {box-sizing: border-box;}
+
+body {
+	--def: #96B7C4; 	
+	--inv: #fff;
+	display: table-cell;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 100vh;
+	width: 100vw;
+	background-color:#D0D0D0;
+}
+
+html {font-size: 12px; font-family: 'Playfair Display', serif;}
+
+
+div {margin-bottom: 1rem;}
+div:last-child {margin-bottom: 1rem;}
+
+
+/*///////////////////////////////////////////////////////////*/
+
+.menu-section {
+  background:#D0D0D0;
+  margin: 0 ;
+  padding: 0;
+}
+/*menu ハンバーガーアイコンの設定*/
+	/*ハンバーガーアイコンの位置　大きさ*/
+		.menu-toggle {
+		  width: 30px;
+		  height: 30px;
+		  position: absolute;
+		  top: 30px;
+		  right: 60px;
+		  cursor: pointer;
+		  background-color:none;
+		}
+	/*ハンバーガーアイコンおした時の傾き数値*/
+		.menu-toggle.on .one {
+		  -moz-transform: rotate(-50deg) translate(-12px, 10px);
+		  -ms-transform: rotate(-50deg) translate(-12px, 10px);
+		  -webkit-transform: rotate(-50deg) translate(-12px, 10px);
+		  transform: rotate(-50deg) translate(-12px, 10px);
+		}
+		.menu-toggle.on .two {
+		  opacity: ;
+		}
+		.menu-toggle.on .three {
+		  opacity: ;
+		}
+	/*ハンバーガーアイコンの棒の設定　色とか太さ、間隔とか*/
+		.one,
+		.two,
+		.three {
+			  width: 100%;
+			  height: 2px;
+			  background: #2A2A2A;
+			  margin: 8px auto;
+			  backface-visibility: hidden;
+			  -moz-transition-duration: 0.3s;
+			  -o-transition-duration: 0.3s;
+			  -webkit-transition-duration: 0.3s;
+			  transition-duration: 0.3s;
+			}
+ /*nav開いた後の文字とかその他設定*/
+		nav ul {
+  margin: 0;
+  padding: 0;
+  font-family: "SourceSansPro-ExtraLight";
+  list-style: none;
+  margin: 13em auto;
+  text-align: center;
+	background-color: none;
+}
+		nav ul.hidden {
+  display: none;
+}
+		nav ul a {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  text-decoration: none;
+  color: #262626;
+  font-size: 2em;
+  width: 100%;
+  display: block;
+  line-height: 3;
+}
+		nav ul a:hover {
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration-line: line-through;
+  color:#2A2A2A;		
+}
+
+ /*ハンバーガーアイコン開いた後映るフルスクリーン画面の設定*/
+		.menu-section.on {
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: rgba(230,230,230,1.00);
+  position: absolute;
+}
+
+
+/*//////////////////////////////////////////////////////////////////////////////////////*/
+
+@media only screen and (max-width: 1024px) {
+	body{width:100vw; height:100vh;background-color:#D0D0D0;}
+	
+	.btn { 
+	top: 44vh;
+	left: 12vh;
+	position: absolute;
+	padding:10px 0px 10px 10px;;
+	
+	font-size: 1rem;
+	letter-spacing: 1rem;
+	text-transform: uppercase;
+	transition:none;
+	user-select: none;
+}
+	
+	
+	.btn:hover:after {background:#484848; transition-delay:.1s;}
+	
+	nav{background-color:none;}
+	nav ul{position:relative; top:5vh; background-color:none; font-size:8px;}
+	nav ul a{margin-bottom:5%;}
+	.menu-toggle{right:10vw; }
+}
+
+
+
+

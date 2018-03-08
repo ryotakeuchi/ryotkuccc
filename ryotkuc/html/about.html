@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>ryo/takeuchi</title>
+    
+ <!--Bootstrapを使う設定-->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+ <!--Bootstrap以外の設定　追加でサイズなどを変更するためのcss-->
+    <link href="../css/about.css" rel="stylesheet">
+   
+ <!--menu の設定 1024px以降のみ適用される　ipad pc など -->
+ 	<link href="../css/menu-settei.css" rel="stylesheet" type="text/css">
+ 	
+</head>
+
+ 
+
+
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+
+	<!--まずはこの "container""コンテナ" でくくる bg-infoのクラス名を追加すると色が表示されてわかりやすい-->
+	<!--これを使うとpcやスマホなど 違う媒体で開いても自動で真ん中に配置される　脇に余白が自動で10pxつく-->
+	<!--このdivの中に　それぞれheaderとかdivで作る-->
+	<!--今回は非表示　
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<!--下みたくtext-centerと表記すると真ん中になる bootstrapのcssのおかげ　
+			fontとかいじりたければ下みたく  ""  の中にクラスを追加してそれぞれ設定すればcssがシンプルになる
+			それ専用のcssを分けるのもありかもしれない-->
+	<!--
+		<p class="text-center">中央寄せテキスト</p>	
+	</div>
+	-->	
+<!--////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+<body>
+
+	<header id="toppage">
+
+		<!--menu-->
+		<!--ハンバーガーアイコン-->
+		<div class="menu-section">
+		  <div class="menu-toggle">
+			<div class="one"></div>
+			<div class="two"></div>
+			<div class="three"></div>
+		  </div>
+		<!--メニュー内容-->
+		  <nav>
+			<ul role="navigation" class="hidden">
+				<li><a href="index.html">home</a></li>
+				<li><a href="work.html">work</a></li>
+				<li><a href="about.html">about</a></li>
+				<li><a href="aday">a day</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		  </nav>
+		</div>
+	
+	</header>
+
+	<div class="container">
+		<div id="name">
+			<h1 class="text-center">RYO / TAKEUCHI</h1>
+		</div>
+		
+		<div id="profile1">
+			<p class="text-center">
+			<p>千葉県生まれ。2018年3月に大学を卒業。</p>
+			<p>高校3年生の頃にデザインに興味を持ち独学を始める。大学在学中には、SNSを利用し様々なコミュニティに所属し依頼を形にする練習を始める。</p>
+			<p>ロゴデザインやフォトコラージュ、モデリング、広告など積極的にものづくりに挑戦。またCinema4DやAfterEffectsなどを使用した映像制作などにも取り組む。
+			コミュニティをきっかけに出逢った方と現在は、音楽制作の活動も進行中。</p>
+			<p>2018年からHTML5/CSS3/JavaScriptなどのプログラミング言語の学習を始める。</p>
+			</p>
+		</div>
+	</div>
+
+
+<!--///////////////////////////////////////////////////////////////////////////////////////-->
+ 	
+  	 
+  	
+   <!--Bootstrapの設定　js bodyの最後に記述しないと反映されない-->
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    
+    <!--menuのjs　動きの設定-->
+	<script src="../js/menu.js"></script>
+  	
+   
+   
+	
+
+</body>
+</html>
