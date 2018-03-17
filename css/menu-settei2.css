@@ -85,8 +85,8 @@ body{position:absolute; width:100vw;  height:100vh;}
 
 
 	nav{background-color:none;}
-	nav ul{position:relative; top:5vh; background-color:none; font-size:8px;}
-	nav ul a{margin-bottom:5%;}
+	nav ul{position:relative; top:0vh; background-color:none; font-size:12px;}
+	nav ul a{margin-bottom:2%;}
 	.menu-toggle{right:10vw; }
 
 
